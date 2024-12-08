@@ -10,7 +10,7 @@ data = yf.download(ticker, start=start_date, end=end_date)
 fig = px.line(data, x = data.index, y = data['Adj Close'], title = ticker)
 st.plotly_chart(fig)
 
-pricing_data, fundamental_data, news, openAi= st.tabs(["Pricing Data", "Fundamental Data", "Top News"])
+pricing_data, fundamental_data, news, openAi= st.tabs(["Pricing Data", "Fundamental Data", "Top News", "Testing"])
 
 with pricing_data:
     st.header('Pricing Movement')
